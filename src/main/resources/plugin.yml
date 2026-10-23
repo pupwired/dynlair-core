@@ -1,0 +1,14 @@
+name: DynlairCore
+version: ${project.version}
+main: net.crimsoningot.dynlair.core.DynlairCorePlugin
+api-version: '1.21'
+description: Collects documentation from registered sources and exports it as JSON.
+commands:
+  dynlair:
+    description: Dynlair commands.
+    usage: /dynlair <sources|export [source...]>
+    permission: dynlair.admin
+permissions:
+  dynlair.admin:
+    description: Use /dynlair.
+    default: op

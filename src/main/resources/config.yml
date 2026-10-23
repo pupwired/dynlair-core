@@ -1,0 +1,12 @@
+output:
+  # Relative to this plugin's data folder (absolute paths are allowed too).
+  directory: exports
+  # true: dynlair-20261023-120000.json   false: dynlair.json (overwritten)
+  timestamped-files: true
+  pretty-print: true
+
+export:
+  # Export automatically once after the server has finished starting.
+  on-startup: false
+  # Extra delay (ticks) before the startup export, if a source needs it.
+  startup-delay-ticks: 1
