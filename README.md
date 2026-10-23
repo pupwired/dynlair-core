@@ -8,6 +8,8 @@ This core plugin offers a registry for documentation sources, and an interface t
  - `/dynlair export [source...]` export all, or optionally, only named sources
 
 ## Hooks
-Dynlair hooks all depend on the core plugin, and the plugin they provide documentation generation for. 
+Dynlair hooks all depend on the core plugin, and the plugin they provide documentation generation for.
+
 DocSource#export() runs on the main thread and returns a JsonObject.
+
 Any process to collect and transform data into the documentation spec is the hook's own domain, and shares no code with this API.
